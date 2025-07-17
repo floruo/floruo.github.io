@@ -4,9 +4,21 @@ description: creator of the Grape-Academic-Theme! Grape-Academic-Theme is a modi
 webpage: https://floruo.github.io
 
 experience: # Remove for hiding the experience section
-  - start: 2017-05-03
-    end: 2018-05-06
-    experience : company name, title
+  - start: 2025-05-01
+    end: Present
+    experience: Self Employed, AI/NLP Consultant & Researcher
+  - start: 2024-10-01
+    end: 2024-12-31
+    experience: University of Zurich, Associate Researcher
+  - start: 2019-10-01
+    end: 2024-09-30
+    experience: University of Zurich, Doctoral Researcher
+  - start: 2016-05-01
+    end: 2019-08-31
+    experience: AWK Group AG, Working Student
+  - start: 2016-01-01
+    end: 2016-04-30
+    experience: AWK Group AG, Intern
 
 social:
   email: ruosch@ifi.uzh.ch # Full email address, e.g. "sample@google.com"
@@ -29,6 +41,6 @@ social:
 
 awards: # Remove for hiding the awards section
   - Best Paper Award at the 1st Workshop on Natural Scientific Language Processing and Research Knowledge Graphs (co-located with ESWC 2024)
-  - Winner of the Scholarly QALD 2023: Semantic Web Challenge on Question Answering over Linked Data (co-located with ISWC 2023)
+  - Winner of the Scholarly QALD 2023 (Semantic Web Challenge on Question Answering over Linked Data (co-located with ISWC 2023))
   - Graduate Research Campus Travel Grant 2024 to visit the University of Dundee, UK
-  - Highlighted project at the 2020 Versus Virus hackathon
+  - Highlighted project at the 2020 Versus Virus Hackathon
