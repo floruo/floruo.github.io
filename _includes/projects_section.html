@@ -1,0 +1,65 @@
+{% comment %}
+  Initialize 'id' variable outside the loop to ensure it increments correctly across all projects.
+  This is crucial for modal functionality if 'id' is used to link projects to modals.
+{% endcomment %}
+{% assign id = 0 %}
+
+<section id="project">
+  <div class="project-wrap">
+    {% comment %} Check if theme_settings.projects_title exists before displaying {% endcomment %}
+    {% if site.theme_settings.projects_title %}
+      <p class="title">{{ site.theme_settings.projects_title }}</p>
+    {% endif %}
+    <div class="card-container">
+      {% for _ in site.data.projects %}
+        {% assign project = _.project %}
+        {% assign id = id | plus: 1 %} {# Increment ID for each project #}
+        <div class="card-wrapper">
+          <div class="card">
+            {% if project.image %}
+              <div class="img-wrap">
+                {% if project.image.path contains '://' -%}
+                  <img src="{{ project.image.path }}" alt="{{ project.image.alt }}">
+                {%- else -%}
+                  <img src="{{ project.image.path | prepend: '/assets/project/' | relative_url }}" alt="{{ project.image.alt }}">
+                {%- endif %}
+              </div>
+            {% endif %}
+            <div class="text-wrap {% if project.image %}has-image{% else %}no-image{% endif %}"> {# Added classes for potential styling #}
+              <div class="title-wrap">
+                <p class="date">{{ project.date }}</p>
+                <div class="title">{{ project.title }}</div>
+              </div>
+              <div class="meta">
+                {% if project.skills %}
+                  &middot;
+                  {% for skill in project.skills %}
+                    <span>#{{ skill }}</span>
+                  {% endfor %}
+                {% endif %}
+              </div>
+              <div class="description">{{ project.description | markdownify }}</div>
+            </div>
+            <div class="icons">
+              {% if project.url %}
+                {% assign url = project.url %}
+                <a href="{{ url }}" target="_blank" rel="noopener noreferrer"><i class="far fa-eye"></i></a> {# Added target="_blank" for external links #}
+              {% endif %}
+              {% if project.modal %}
+                <a title="{{ id }}" onClick="open_modal(this.title)" class="modal-btn"><i class="fas fa-plus"></i></a>
+              {% endif %}
+            </div>
+          </div>
+        </div>
+        {% if project.modal %}
+          {# Ensure modal.html exists in _includes and is correctly configured to use 'project' data #}
+          {% include modal.html project=project id=id %}
+        {% endif %}
+        {% endfor %}
+    </div>
+  </div>
+  <div class="bg"></div>
+</section>
+
+{# Ensure modal.js is in assets/js and is loaded. You might want to put this in your base layout if used site-wide. #}
+<script type="text/javascript" src="{{ '/assets/js/modal.js' | relative_url }}"></script>

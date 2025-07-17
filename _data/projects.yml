@@ -4,18 +4,22 @@
     url: https://gitlab.ifi.uzh.ch/DDIS-Public/bam # Full URL
     image:
       path: "bam.png" # path: assets/project/
-      alt: ""
+      alt: "BAM picture"
     date: 2022
     title: BAM - Benchmarking Argument Mining
     summary: Benchmarking Argument Mining.
     description: In this paper, we present BAM, a unified Benchmark for Argument Mining (AM). We propose a method to homogenize both the evaluation process and the data to provide a common view in order to ultimately produce comparable results. Built as a four stage and end-to-end pipeline, the benchmark allows for the direct inclusion of additional argument miners to be evaluated. First, our system pre-processes a ground truth set used both for training and testing. Then, the benchmark calculates a total of four measures to assess different aspects of the mining process. To showcase an initial implementation of our approach, we apply our procedure and evaluate a set of systems on a corpus of scientific publications. With the obtained comparable results we can homogeneously assess the current state of AM in this domain.
+    skills: # Example of skills
+      - Machine Learning
+      - Natural Language Processing
+      - Benchmarking
 - project:
     print: True # If 'False' is selected, it will not be displayed in 'home.html > aside > .proj-content'. 
     modal: True # If 'True' is selected, modal can open in 'portfolio.html'. 
     url: https://gitlab.ifi.uzh.ch/DDIS-Public/dream # Full URL
     image:
       path: "dream.png" # path: assets/project/
-      alt: ""
+      alt: "DREAM  picture"
     date: 2023
     title: DREAM - Deployment of Recombination and Ensembles in Argument Mining
     summary: Improving Argument Mining.
@@ -26,7 +30,7 @@
     url: https://megras.org/ # Full URL
     image:
       path: "megras.png" # path: assets/project/
-      alt: ""
+      alt: "MeGraS architecture"
     date: 2025
     title: MeGraS
     summary: Multimodal knowledge graph store and query engine.
@@ -37,7 +41,7 @@
     url: https://github.com/floruo/LifeGraph5 # Full URL
     image:
       path: "lifegraph.png" # path: assets/project/
-      alt: ""
+      alt: "LifeGraph logo"
     date: 2021 -- 2025
     title: LifeGraph
     summary: Frontend for the retrieval of lifelog events from multimodal knowledge graphs.
