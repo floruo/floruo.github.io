@@ -1,0 +1,40 @@
+---
+layout: page
+---
+<div id="projects">
+  <section class="bg"></section>
+  <h1 class="title">{{ page.title }}</h1>
+  <ol class="projects-list">
+    {% for _ in site.data.projects %}
+      {% assign project = _.project %}
+      <li>
+        <em class="title">{{ project.title }}</em> {% if project.date %}<em class="date">({{ project.date }})</em>{% endif %}
+        {% if project.summary %}<p class="summary">{{ project.summary | markdownify }}</p>{% endif %}
+        {% if project.description %}<p class="description">{{ project.description | markdownify }}</p>{% endif %}
+        <div class="links">
+          {%- if project.url %}
+            {% if project.url contains '://' -%}
+              [<a href="{{ project.url }}" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer" title="Project Link">Link</a>]
+            {%- else -%}
+              {# This case is less common for 'url' but kept for consistency with presentations #}
+              [<a href="{{ project.url | relative_url }}" class="btn btn-sm z-depth-0" role="button" title="Project Link">Link</a>]
+            {%- endif %}
+          {%- endif %}
+          {#
+            If you want to add more links like 'slides' or 'poster' for projects,
+            you would add similar 'if' conditions here,
+            assuming you add those fields to your _data/projects.yml
+            Example:
+            {%- if project.report %}
+              {% if project.report contains '://' -%}
+                [<a href="{{ project.report }}" class="btn btn-sm z-depth-0" role="button" title="Report">Report</a>]
+              {%- else -%}
+                [<a href="{{ project.report | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button" title="Report">Report</a>]
+              {%- endif %}
+            {%- endif %}
+          #}
+        </div>
+      </li>
+    {% endfor %}
+  </ol>
+</div>
