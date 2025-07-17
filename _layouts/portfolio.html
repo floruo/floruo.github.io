@@ -31,10 +31,14 @@ layout: page
   </section>
   <!-- career section -->
   <section id="career" class="row">
-      {% include experience.html %}
-      {% include awards.html %}
+    <article class="exper col-12 col-md-6">     
       {% include interests.html %}
+	  {% include experience.html %}
+    </article>
+    <article class="skills col-12 col-md-6">
+      {% include awards.html %}
       {% include skills.html %}
+    </article>
   </section>
 
   {% include recentpubs.html %}
