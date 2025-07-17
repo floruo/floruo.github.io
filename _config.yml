@@ -6,7 +6,7 @@ baseurl: ""
 # Turn subpages on or off
 publications: True
 projects: True
-presentations: True
+presentations: False
 blog: False
 roles: True
 
@@ -19,7 +19,7 @@ description: The academic, personal website of Florian Ruosch.
 author: Florian Ruosch (floruo)
 logo: /assets/img/smile.png
 social:
-  name: Christoph Jabs
+  name: Florian Ruosch
   links:
     - https://github.com/floruo
     - https://www.linkedin.com/in/florian-ruosch
