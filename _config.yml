@@ -1,31 +1,30 @@
 # Site Settings
 # Do not use trailing slash (i.e. "/Sample"). For skipping base URL, leave empty quotes ("")
-baseurl: "/Grape-Academic-Theme"
+baseurl: ""
 
 # Features Setting
 # Turn subpages on or off
 publications: True
+projects: True
 presentations: True
-blog: True
+blog: False
+roles: True
 
 # Language of the website
 lang: en
 
 # Search engine optimization settings
-title: Grape Academic Theme
-tagline: A jekyll theme for academic portfolios
-description: The demonstration page for the Grape Academic Theme, a jekyll theme for academic portfolios based on the Grape Theme.
-author: Christoph Jabs (chrjabs)
-twitter:
-  username: chrjabs
-  card: A jekyll theme for academic portfolios
+title: Florian Ruosch
+description: The academic, personal website of Florian Ruosch.
+author: Florian Ruosch (floruo)
 logo: /assets/img/smile.png
 social:
   name: Christoph Jabs
   links:
-    - https://twitter.com/chrjabs
-    - https://github.com/chrjabs
-locale: en_GB
+    - https://github.com/floruo
+    - https://www.linkedin.com/in/florian-ruosch
+    - https://scholar.google.ch/citations?user=0jQI64wAAAAJ
+locale: en_US
 
 # Page Settings
 theme_settings:
@@ -39,8 +38,8 @@ theme_settings:
   recentpubs_title: RECENT PUBLICATIONS
 
 # Pagination
-paginate: 5
-paginate_path: "blog/page:num"
+# paginate: 5
+# paginate_path: "blog/page:num"
 
 # Build Settings
 sass:
