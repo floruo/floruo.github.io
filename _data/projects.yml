@@ -6,7 +6,7 @@
       path: "bam.png" # path: assets/project/
       alt: ""
     date: 2022
-    title: BAM: Benchmarking Argument Mining
+    title: BAM - Benchmarking Argument Mining
     summary: Benchmarking Argument Mining.
     description: In this paper, we present BAM, a unified Benchmark for Argument Mining (AM). We propose a method to homogenize both the evaluation process and the data to provide a common view in order to ultimately produce comparable results. Built as a four stage and end-to-end pipeline, the benchmark allows for the direct inclusion of additional argument miners to be evaluated. First, our system pre-processes a ground truth set used both for training and testing. Then, the benchmark calculates a total of four measures to assess different aspects of the mining process. To showcase an initial implementation of our approach, we apply our procedure and evaluate a set of systems on a corpus of scientific publications. With the obtained comparable results we can homogeneously assess the current state of AM in this domain.
 - project:
@@ -17,7 +17,7 @@
       path: "dream.png" # path: assets/project/
       alt: ""
     date: 2023
-    title: DREAM: Deployment of Recombination and Ensembles in Argument Mining
+    title: DREAM - Deployment of Recombination and Ensembles in Argument Mining
     summary: Improving Argument Mining.
     description: Current approaches to Argument Mining (AM) tend to take a holistic or black-box view of the overall pipeline. This paper, in contrast, aims to provide a solution to achieve increased performance based on current components instead of independent all-new solutions. To that end, it presents the Deployment of Recombination and Ensemble methods for Argument Miners (DREAM) framework that allows for the (automated) combination of AM components. Using ensemble methods, DREAM combines sets of AM systems to improve accuracy for the four tasks in the AM pipeline. Furthermore, it leverages recombination by using different argument miners elements throughout the pipeline. Experiments with five systems previously included in a benchmark show that the systems combined with DREAM can outperform the previous best single systems in terms of accuracy measured by an AM benchmark.
 - project:
